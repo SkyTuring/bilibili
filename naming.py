@@ -25,7 +25,7 @@ def makedir(dir_name):
 
 if __name__ == "__main__":
     file_format = '.flv'                            # 文件格式
-    srcFile = "E:\\BiliBili\\19955501"              # 文件所在目录
+    srcFile = "E:\\BiliBili"                        # 文件所在目录
     title = ""                                      # 文件标题
     dir_title = ""                                  # 新目录名
     dir_path = "E:\\BiliBili"                       # 新路径
