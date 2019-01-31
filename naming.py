@@ -1,6 +1,7 @@
 import os
 import json
 import shutil
+from natsort import natsorted
 
 
 def get_sub_dir_names(file_dir):
@@ -30,7 +31,7 @@ if __name__ == "__main__":
     dir_title = ""                                  # 新目录名
     dir_path = "E:\\BiliBili"                       # 新路径
     catalog = []                                    # 最后目录
-    dir_names = get_sub_dir_names(srcFile)
+    dir_names = natsorted(get_sub_dir_names(srcFile))
     for path in dir_names:
         file_path = os.path.join(srcFile, path)
         file_names = get_sub_file_names(file_path)

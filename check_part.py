@@ -14,7 +14,7 @@ def get_sub_file_names(file_dir):
 
 
 if __name__ == "__main__":
-    srcFile = "E:\\BiliBili"  # 文件所在目录
+    srcFile = "E:\\BiliBili\\25609975"  # 文件所在目录
     dir_names = get_sub_dir_names(srcFile)
     dir_names = natsorted(dir_names)
     for path in dir_names:
